@@ -2,12 +2,87 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Change Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
-    <!-- Write your markup here -->
+    <div class="container" style="margin-top: 20%;">
+      <div class="box">
 
-    <!-- Don't forget to add your <script> tag here -->
+        <div class="block">
+          <h1 class="title">Change Calculator</h1>
+        </div>
 
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <div>
+                <label for="sale">How much is due for the sale?</label>
+                <input class="input" type="number" id="amount-due">
+              </div>
+            </div>
+
+            <div class="level-item">
+              <div>
+                <label for="customer">How much has the customer given you?</label>
+                <input class="input" type="number" id="amount-received">
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="column is-2"></div> -->
+          <div class="level-right">
+            <div class="level-item">
+              <button class="button is-primary is-fullwidth is-large" id="calculate-change">Calculate</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="box level">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Dollars</p>
+            <p class="title" id="dollars-output">0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box level">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Quarters</p>
+            <p class="title" id="quarters-output">0</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Dimes</p>
+            <p class="title" id="dimes-output">0</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Nickels</p>
+            <p class="title" id="nickels-output">0</p>
+          </div>
+        </div>
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Pennies</p>
+            <p class="title" id="pennies-output">0</p>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
